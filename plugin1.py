@@ -334,30 +334,30 @@ def verify_security(master,remote):
        f2.close()
 
 def main(): 
-   if len(sys.argv) != 10:
-        check()
+   #if len(sys.argv) != 10:
+   #     check()
    # Function to save GoldCopy Jenkins Instance Plugins Information to csv file 
-   save_goldcopy_info(sys.argv[1],sys.argv[2],sys.argv[3])
+   #save_goldcopy_info(sys.argv[1],sys.argv[2],sys.argv[3])
    # Function to match the csv file with Remote Jenkins Instance Plugin Configuration
-   match_plugins(sys.argv[4],sys.argv[5],sys.argv[6])
+   #match_plugins(sys.argv[4],sys.argv[5],sys.argv[6])
    
    # Calling the jenkins using api
-   goldcopy = jenkins.Jenkins(sys.argv[1],sys.argv[2],sys.argv[3])
-   remotemaster = jenkins.Jenkins(sys.argv[4],sys.argv[5],sys.argv[6])     
+   #goldcopy = jenkins.Jenkins(sys.argv[1],sys.argv[2],sys.argv[3])
+   #remotemaster = jenkins.Jenkins(sys.argv[4],sys.argv[5],sys.argv[6])     
    # Function to match Global Shared Libraries
-   match_shared_libraries(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
+   #match_shared_libraries(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
 
    # Function to match github servers
-   match_github_servers(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
+   #match_github_servers(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
 
    #Function to check Maven Installations
-   check_maven_installations(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
+   #check_maven_installations(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
 
    #Function to match Sonar Servers
-   match_sonar_servers(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
+   #match_sonar_servers(goldcopy,remotemaster,sys.argv[7],sys.argv[8],sys.argv[9])
 
    #Function to verify security
-   verify_security(goldcopy,remotemaster)
+   #verify_security(goldcopy,remotemaster)
 
 if __name__ == '__main__':
    main()
