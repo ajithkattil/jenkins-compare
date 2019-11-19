@@ -368,5 +368,5 @@ with open(filepath) as fp:
    #Function to verify security
    #verify_security(goldcopy,remotemaster)
 
-if __name__=='__main__':
+if __name__ == "__main__":
    main()
