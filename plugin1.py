@@ -333,8 +333,17 @@ def verify_security(master,remote):
           f2.write("Security is NOT matching"+","+"Gold Copy Master -- "+info1['useSecurity']+","+"Remote Jenkins -- "+info2['useSecurity']+'\n') 
        f2.close()
 
+      
 def main(): 
-   #if len(sys.argv) != 10:
+filepath = 'filelist.txt'   
+with open(filepath) as fp:
+   line = fp.readline()
+   cnt = 1
+   while line:
+       print("Line {}: {}".format(cnt, line.strip()))
+       line = fp.readline()
+       report(data['url']
+       cnt += 1
    #     check()
    # Function to save GoldCopy Jenkins Instance Plugins Information to csv file 
    #save_goldcopy_info(sys.argv[1],sys.argv[2],sys.argv[3])
@@ -359,5 +368,5 @@ def main():
    #Function to verify security
    #verify_security(goldcopy,remotemaster)
 
-if __name__ == '__main__':
+if __name__=='__main__':
    main()
