@@ -1,8 +1,8 @@
-from jenkinsapi.jenkins import Jenkins #pip3 install jenkinsapi
+#from jenkinsapi.jenkins import Jenkins #pip3 install jenkinsapi
 import sys
 import xml.etree.ElementTree as ET
 from pexpect import pxssh # pip3 install pexpect
-import jenkins # pip3 install python-jenkins
+#import jenkins # pip3 install python-jenkins
 import os
 
 def check():
