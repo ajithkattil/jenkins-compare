@@ -337,13 +337,13 @@ def verify_security(master,remote):
 def main(): 
    filepath = 'filelist.txt'   
    with open(filepath) as fp:
-   line = fp.readline()
-   cnt = 1
-   while line:
-       print("Line {}: {}".format(cnt, line.strip()))
-       line = fp.readline()
-       report(data['url']
-       cnt += 1
+      line = fp.readline()
+      cnt = 1
+      while line:
+         print("Line {}: {}".format(cnt, line.strip()))
+         line = fp.readline()
+         #report(data['url']
+         cnt += 1
    #     check()
    # Function to save GoldCopy Jenkins Instance Plugins Information to csv file 
    #save_goldcopy_info(sys.argv[1],sys.argv[2],sys.argv[3])
