@@ -335,8 +335,8 @@ def verify_security(master,remote):
 
       
 def main(): 
-filepath = 'filelist.txt'   
-with open(filepath) as fp:
+   filepath = 'filelist.txt'   
+   with open(filepath) as fp:
    line = fp.readline()
    cnt = 1
    while line:
